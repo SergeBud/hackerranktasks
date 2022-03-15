@@ -1,4 +1,4 @@
-package by.hackerrank.warmup.task1
+package by.sb.warmup.sockMerchant
 
 
 /*

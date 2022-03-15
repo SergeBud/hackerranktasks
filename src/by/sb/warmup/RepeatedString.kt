@@ -1,4 +1,4 @@
-package by.hackerrank.warmup.task4
+package by.sb.warmup.task4
 
 import kotlin.math.pow
 

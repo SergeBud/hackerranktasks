@@ -1,4 +1,4 @@
-package by.hackerrank.warmup.task3
+package by.sb.warmup.task3
 
 fun jumpingOnClouds(c: Array<Int>): Int {
     val size = c.size
