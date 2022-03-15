@@ -22,7 +22,7 @@ fun repeatedString(s: String, n: Long): Long {
     val res1 = countAInString(s)
     val res2 = countAInString(s, lastPart)
 
-    return fullStrings * res1 + res2;
+    return fullStrings * res1 + res2
 }
 
 fun countAInString(s: String): Long = s.count {
@@ -30,7 +30,7 @@ fun countAInString(s: String): Long = s.count {
 }.toLong()
 
 fun countAInString(s: String, untilIndex: Int): Long {
-    var count = 0;
+    var count = 0
 
     if (untilIndex == 0) {
         return count.toLong()
@@ -38,7 +38,7 @@ fun countAInString(s: String, untilIndex: Int): Long {
 
     val cArr = s.toCharArray()
     IntRange(0, untilIndex - 1).forEach { index ->
-        val symbol = cArr.get(index)
+        val symbol = cArr[index]
         if ("a".single() == symbol) {
             count++
         }
@@ -46,7 +46,7 @@ fun countAInString(s: String, untilIndex: Int): Long {
     return count.toLong()
 }
 
-fun main(args: Array<String>) {
+fun main() {
     val s = readLine()!!
 
     val n = readLine()!!.trim().toLong()
